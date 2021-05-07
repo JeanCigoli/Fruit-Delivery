@@ -1,0 +1,2 @@
+export const AUTHENTICATION = '@auth/CREATE_AUTHENTICATION';
+export const FETCH_AUTH = '@auth/FETCH_AUTHENTICATION';
