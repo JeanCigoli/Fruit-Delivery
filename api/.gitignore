@@ -1,5 +1,9 @@
 node_modules/
 dist/
 
+uploads/*.jpg
+uploads/*.jpeg
+uploads/*.png
+
 .env
 .log
