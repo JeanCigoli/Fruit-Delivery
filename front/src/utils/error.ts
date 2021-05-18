@@ -10,7 +10,7 @@ export const requestError = (error: AxiosError) => {
     return;
   }
 
-  response.data.errors.forEach((element: any) => {
+  response.data.error.forEach((element: any) => {
     toast.error(element.message);
   });
 };

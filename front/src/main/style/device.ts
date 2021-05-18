@@ -18,3 +18,8 @@ export const devices = {
   desktop: `(max-width: ${size.desktop})`,
   desktopL: `(max-width: ${size.desktop})`,
 };
+
+export const devicesHeight = {
+  tablet: '(max-height: 600px)',
+  laptop: '(max-height: 800px)',
+};

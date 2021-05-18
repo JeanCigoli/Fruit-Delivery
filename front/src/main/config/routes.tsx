@@ -21,6 +21,10 @@ const RouterWrapper: React.FC<Routes> = ({
     return <Redirect to="/" />;
   }
 
+  if (!isPrivate && token) {
+    return <Redirect to="/dashboard" />;
+  }
+
   return (
     <>
       <Route

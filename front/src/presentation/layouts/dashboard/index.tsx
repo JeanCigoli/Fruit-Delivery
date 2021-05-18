@@ -1,13 +1,11 @@
 import React from 'react';
 import NavBar from '../../components/navbar';
 
-import { Container, NavContainer } from './styled';
+import { Container } from './styled';
 
 const Dashboard: React.FC = ({ children }) => (
   <Container>
-    <NavContainer>
-      <NavBar />
-    </NavContainer>
+    <NavBar />
     {children}
   </Container>
 );

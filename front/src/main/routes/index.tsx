@@ -1,19 +1,26 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Login } from '../../presentation/pages';
+import { BrowserRouter, Switch } from 'react-router-dom';
+import { Login, Home } from '../../presentation/pages';
 import { LoginLayout, DashboardLayout } from '../../presentation/layouts';
 import Routes from '../config/routes';
 
 const Router: React.FC = () => (
   <BrowserRouter>
     <Switch>
-      <Route path="/" exact>
-        <Routes isPrivate={false} component={Login} layout={LoginLayout} />
-      </Route>
+      <Routes
+        path="/"
+        isPrivate={false}
+        exact
+        component={Login}
+        layout={LoginLayout}
+      />
 
-      <Route path="/dashboard">
-        <Routes isPrivate component={Login} layout={DashboardLayout} />
-      </Route>
+      <Routes
+        path="/dashboard"
+        isPrivate
+        component={Home}
+        layout={DashboardLayout}
+      />
     </Switch>
   </BrowserRouter>
 );

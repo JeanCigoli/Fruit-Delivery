@@ -3,13 +3,17 @@ import { useForm } from 'react-hook-form';
 import { IoMdEye, IoMdEyeOff } from 'react-icons/io';
 import { yupResolver } from '@hookform/resolvers/yup';
 
+import { useAppDispatch } from '../../../data/hooks/redux';
 import { LoginType } from '../../../domain/forms/login-form';
 import Input from '../../components/input';
 import * as Button from '../../components/button';
 import { Container, Form, Paragraph } from './styled';
 import { authenticationSchema } from '../../../validation/forms';
+import { authentication } from '../../../data/usecases/auth/authentication';
 
 const Login: React.FC = () => {
+  const dispatch = useAppDispatch();
+
   const {
     register,
     handleSubmit,
@@ -21,7 +25,7 @@ const Login: React.FC = () => {
   const [showPassword, setShowPassword] = useState(true);
 
   const onSubmit = (value: LoginType) => {
-    console.log(value);
+    dispatch(authentication(value));
   };
 
   const handleShowPassword = () => {
