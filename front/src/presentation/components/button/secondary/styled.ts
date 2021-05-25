@@ -18,6 +18,10 @@ export const Button = styled.button<ButtonDTO>`
   cursor: pointer;
   letter-spacing: 0.5px;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
   border: 2px solid
     ${({ backgroundColor, theme }) => theme.styles.colors[backgroundColor].bold};
   color: ${({ backgroundColor, theme }) =>
@@ -27,6 +31,10 @@ export const Button = styled.button<ButtonDTO>`
   border-radius: ${({ theme }) => theme.styles.spacing.short};
 
   transition: background-color ease-out 0.3s;
+
+  svg {
+    font-size: ${({ theme }) => theme.styles.font.medium};
+  }
 
   :hover {
     background-color: ${({ backgroundColor, theme }) =>

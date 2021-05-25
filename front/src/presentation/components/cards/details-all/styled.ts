@@ -25,7 +25,7 @@ export const Container = styled.div`
 
 export const Icon = styled.div`
   width: 30%;
-  height: 120%;
+  height: 110%;
 
   div {
     width: 100%;

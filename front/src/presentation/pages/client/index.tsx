@@ -19,11 +19,11 @@ const Client: React.FC = () => (
           description="usuários cadastrados"
         />
 
-        <Button.Primary
+        <Button.Secondary
           type="button"
           label="Novo usuário"
           icon={<MdAdd />}
-          backgroundColor="pink"
+          backgroundColor="orange"
           color="white"
         />
       </FiltersContainer>
