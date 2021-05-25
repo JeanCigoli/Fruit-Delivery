@@ -7,7 +7,8 @@ import {
   FETCH_AUTH,
 } from '../../../infra/redux/authentication/constants';
 import { auth } from '../../../infra/http/web-service';
-import { TOKEN } from '../../../main/config/constants';
+import { SESSION_AUTH, TOKEN } from '../../../main/config/constants';
+import { SessionStorage } from '../../../utils/storage/session';
 
 export const authentication =
   (params: any) => async (dispatch: AppDispatch) => {
@@ -15,7 +16,9 @@ export const authentication =
     try {
       const { data } = await auth.authentication(params);
 
-      localStorage.setItem(TOKEN, data.payload.accessToken);
+      SessionStorage.setItem(TOKEN, data.payload.accessToken);
+      SessionStorage.setItem(SESSION_AUTH, { name: data.payload.name });
+
       dispatch({ type: AUTHENTICATION, payload: { name: data.payload.name } });
 
       toast.success(data.message);

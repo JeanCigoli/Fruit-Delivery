@@ -19,11 +19,19 @@ export const Button = styled.button<ButtonDTO>`
   cursor: pointer;
   letter-spacing: 0.5px;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
   background-color: ${({ backgroundColor, theme }) =>
     theme.styles.colors[backgroundColor].bold};
   color: ${({ color, theme }) => theme.styles.colors[color].normal};
   font-size: ${({ theme }) => theme.styles.font.default};
   border-radius: ${({ theme }) => theme.styles.spacing.short};
+
+  svg {
+    font-size: ${({ theme }) => theme.styles.font.medium};
+  }
 
   :hover {
     opacity: 0.85;

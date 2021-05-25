@@ -5,6 +5,6 @@ export interface ButtonDTO {
   label: string;
   backgroundColor: 'gray' | 'pink' | 'orange';
   type: 'button' | 'submit' | 'reset' | undefined;
-  icon?: React.FC;
+  icon?: React.ReactElement;
   [propName: string]: any;
 }

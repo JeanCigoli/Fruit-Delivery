@@ -1,5 +1,6 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
+import { SessionStorage } from '../../utils/storage/session';
 import { TOKEN } from './constants';
 
 type Routes = {
@@ -15,14 +16,10 @@ const RouterWrapper: React.FC<Routes> = ({
   layout: Layout,
   ...rest
 }) => {
-  const token = localStorage.getItem(TOKEN) || false;
+  const session = SessionStorage.getItem(TOKEN);
 
-  if (!token && isPrivate) {
+  if (!session && isPrivate) {
     return <Redirect to="/" />;
-  }
-
-  if (!isPrivate && token) {
-    return <Redirect to="/dashboard" />;
   }
 
   return (

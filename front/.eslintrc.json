@@ -28,6 +28,8 @@
     "implicit-arrow-linebreak": "off",
     "indent": "off",
     "operator-linebreak": "off",
-    "no-confusing-arrow": "off"
+    "no-confusing-arrow": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "no-prototype-builtins": "off"
   }
 }

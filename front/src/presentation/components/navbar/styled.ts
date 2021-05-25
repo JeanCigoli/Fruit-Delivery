@@ -58,7 +58,14 @@ export const NavList = styled.nav`
   width: 100%;
   height: auto;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  a {
+    color: inherit;
+    text-decoration: none;
+    width: inherit;
+    height: inherit;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;

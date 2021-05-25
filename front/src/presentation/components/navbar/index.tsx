@@ -26,12 +26,42 @@ const Navbar: React.FC = () => {
     <NavContainer>
       <Logo />
       <NavList>
-        <NavItem active icon={<FaHome />} label="Tela inicial" />
-        <NavItem active={false} icon={<FaUsers />} label="Clientes" />
-        <NavItem active={false} icon={<FaDollarSign />} label="Vendas" />
-        <NavItem active={false} icon={<FaShoppingCart />} label="Compras" />
-        <NavItem active={false} icon={<FaChartLine />} label="Despesas" />
-        <NavItem active={false} icon={<FaArchive />} label="Estoque" />
+        <NavItem
+          active
+          icon={<FaHome />}
+          link="/dashboard"
+          label="Tela inicial"
+        />
+        <NavItem
+          active={false}
+          icon={<FaUsers />}
+          link="/clientes"
+          label="Clientes"
+        />
+        <NavItem
+          active={false}
+          icon={<FaDollarSign />}
+          link="/vendas"
+          label="Vendas"
+        />
+        <NavItem
+          active={false}
+          icon={<FaShoppingCart />}
+          link="/compras"
+          label="Compras"
+        />
+        <NavItem
+          active={false}
+          icon={<FaChartLine />}
+          link="/despesas"
+          label="Despesas"
+        />
+        <NavItem
+          active={false}
+          icon={<FaArchive />}
+          link="/estoques"
+          label="Estoque"
+        />
       </NavList>
 
       <img src={menuImage} alt="Menu - imagem personalizada de uma venda" />

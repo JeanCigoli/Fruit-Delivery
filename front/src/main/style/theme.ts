@@ -42,8 +42,8 @@ export const props = {
       default: '1.1rem',
       medium: '1.5rem',
       large: '2.0rem',
-      xLarge: '3rem',
-      xxLarge: '6rem',
+      xLarge: '2.5rem',
+      xxLarge: '3.5rem',
     },
     spacing: {
       shorter: '4px',
