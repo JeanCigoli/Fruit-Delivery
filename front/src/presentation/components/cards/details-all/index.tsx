@@ -3,13 +3,11 @@ import { CardDetailsDTO } from '../../../../domain/components/card-details-all-d
 
 import { Container, Icon } from './styled';
 
-const DetailsAll: React.FC<CardDetailsDTO> = ({ icon, total, description }) => (
+const DetailsAll: React.FC<CardDetailsDTO> = ({ icon }) => (
   <Container>
     <Icon>
       <div>{icon}</div>
     </Icon>
-    <h2>{total}</h2>
-    <span>{description}</span>
   </Container>
 );
 

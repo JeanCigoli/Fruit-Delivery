@@ -20,6 +20,7 @@ export const props = {
       },
       purple: {
         light: '#D6ADB9',
+        medium: '#d1a1af',
       },
       red: {
         medium: '#f14e32',

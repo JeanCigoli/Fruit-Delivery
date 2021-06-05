@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch } from 'react-router-dom';
-import { Login, Home, Client } from '../../presentation/pages';
+import { Login, Home, Client, Products } from '../../presentation/pages';
 import { LoginLayout, DashboardLayout } from '../../presentation/layouts';
 import Routes from '../config/routes';
 
@@ -27,6 +27,14 @@ const Router: React.FC = () => (
       isPrivate
       exact
       component={Client}
+      layout={DashboardLayout}
+    />
+
+    <Routes
+      path="/estoques"
+      isPrivate
+      exact
+      component={Products}
       layout={DashboardLayout}
     />
   </Switch>

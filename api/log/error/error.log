@@ -493,3 +493,55 @@ Error: Error: TOKEN_NOT_FOUND at Error: TOKEN_NOT_FOUND
     at next (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:275:10)
     at urlencodedParser (F:\www\Jack\fruit\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
     at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)
+------------------------------------------------
+Date: 05-Jun-2021:11:59:56 GMT-0300
+Error: Error: TOKEN_NOT_FOUND at Error: TOKEN_NOT_FOUND
+    at DbAuthenticationToken.auth (F:\www\Jack\fruit\api\src\data\usecases\db-authentication-token.ts:15:13)
+    at AuthMiddleware.handle (F:\www\Jack\fruit\api\src\presentation\middleware\auth-middleware.ts:13:51)
+    at F:\www\Jack\fruit\api\src\main\adapters\adaptMiddleware.ts:11:43
+    at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:317:13)
+    at F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:335:12)
+    at next (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (F:\www\Jack\fruit\api\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)
+------------------------------------------------
+Date: 05-Jun-2021:12:01:00 GMT-0300
+Error: Error: TOKEN_NOT_FOUND at Error: TOKEN_NOT_FOUND
+    at DbAuthenticationToken.auth (F:\www\Jack\fruit\api\src\data\usecases\db-authentication-token.ts:15:13)
+    at AuthMiddleware.handle (F:\www\Jack\fruit\api\src\presentation\middleware\auth-middleware.ts:13:51)
+    at F:\www\Jack\fruit\api\src\main\adapters\adaptMiddleware.ts:11:43
+    at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:317:13)
+    at F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:335:12)
+    at next (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (F:\www\Jack\fruit\api\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)
+------------------------------------------------
+Date: 05-Jun-2021:12:01:20 GMT-0300
+Error: Error: TOKEN_NOT_FOUND at Error: TOKEN_NOT_FOUND
+    at DbAuthenticationToken.auth (F:\www\Jack\fruit\api\src\data\usecases\db-authentication-token.ts:15:13)
+    at AuthMiddleware.handle (F:\www\Jack\fruit\api\src\presentation\middleware\auth-middleware.ts:13:51)
+    at F:\www\Jack\fruit\api\src\main\adapters\adaptMiddleware.ts:11:43
+    at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:317:13)
+    at F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:335:12)
+    at next (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (F:\www\Jack\fruit\api\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)
+------------------------------------------------
+Date: 05-Jun-2021:12:01:44 GMT-0300
+Error: Error: TOKEN_NOT_FOUND at Error: TOKEN_NOT_FOUND
+    at DbAuthenticationToken.auth (F:\www\Jack\fruit\api\src\data\usecases\db-authentication-token.ts:15:13)
+    at AuthMiddleware.handle (F:\www\Jack\fruit\api\src\presentation\middleware\auth-middleware.ts:13:51)
+    at F:\www\Jack\fruit\api\src\main\adapters\adaptMiddleware.ts:11:43
+    at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:317:13)
+    at F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:335:12)
+    at next (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (F:\www\Jack\fruit\api\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)

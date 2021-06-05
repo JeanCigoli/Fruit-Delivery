@@ -22,6 +22,10 @@ const RouterWrapper: React.FC<Routes> = ({
     return <Redirect to="/" />;
   }
 
+  if (session && !isPrivate) {
+    return <Redirect to="/dashboard" />;
+  }
+
   return (
     <>
       <Route

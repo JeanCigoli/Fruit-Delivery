@@ -39,11 +39,15 @@ export const LeftContainer = styled.div`
   }
 
   @media ${({ theme }) => theme.devices.mobileL} {
-    width: 15vw;
+    width: 10vw;
     justify-content: flex-start;
     padding-top: 15px;
 
     h1 {
+      display: none;
+    }
+
+    img {
       display: none;
     }
   }
