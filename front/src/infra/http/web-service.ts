@@ -23,3 +23,8 @@ export const product = {
   listAll: (params: any) =>
     api.get(`v1/products?${transformObjectToQueryParams(params)}`),
 };
+
+export const clients = {
+  listAll: (params: any) =>
+    api.get(`v1/clients?${transformObjectToQueryParams(params)}`),
+};

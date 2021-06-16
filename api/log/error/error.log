@@ -545,3 +545,49 @@ Error: Error: TOKEN_NOT_FOUND at Error: TOKEN_NOT_FOUND
     at next (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:275:10)
     at urlencodedParser (F:\www\Jack\fruit\api\node_modules\body-parser\lib\types\urlencoded.js:91:7)
     at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)
+------------------------------------------------
+Date: 16-Jun-2021:18:37:45 GMT-0300
+Error: TypeError: Cannot destructure property 'limit' of 'params' as it is undefined. at TypeError: Cannot destructure property 'limit' of 'params' as it is undefined.
+    at DbListAllClients.list (F:\www\Jack\fruit\api\src\data\usecases\db-list-all-clients.ts:15:13)
+    at ListAllClientsController.handle (F:\www\Jack\fruit\api\src\presentation\controllers\list-all-clients-controller.ts:10:45)
+    at F:\www\Jack\fruit\api\src\main\adapters\adaptRoute.ts:16:43
+    at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\www\Jack\fruit\api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (F:\www\Jack\fruit\api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)
+    at F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:335:12)
+    at next (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:275:10)
+------------------------------------------------
+Date: 16-Jun-2021:18:40:09 GMT-0300
+Error: TypeError: Cannot destructure property 'limit' of 'params' as it is undefined. at TypeError: Cannot destructure property 'limit' of 'params' as it is undefined.
+    at DbListAllClients.list (F:\www\Jack\fruit\api\src\data\usecases\db-list-all-clients.ts:15:13)
+    at ListAllClientsController.handle (F:\www\Jack\fruit\api\src\presentation\controllers\list-all-clients-controller.ts:10:45)
+    at F:\www\Jack\fruit\api\src\main\adapters\adaptRoute.ts:16:43
+    at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\www\Jack\fruit\api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (F:\www\Jack\fruit\api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)
+    at F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:335:12)
+    at next (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:275:10)
+------------------------------------------------
+Date: 16-Jun-2021:18:40:10 GMT-0300
+Error: TypeError: Cannot destructure property 'limit' of 'params' as it is undefined. at TypeError: Cannot destructure property 'limit' of 'params' as it is undefined.
+    at DbListAllClients.list (F:\www\Jack\fruit\api\src\data\usecases\db-list-all-clients.ts:15:13)
+    at ListAllClientsController.handle (F:\www\Jack\fruit\api\src\presentation\controllers\list-all-clients-controller.ts:10:45)
+    at F:\www\Jack\fruit\api\src\main\adapters\adaptRoute.ts:16:43
+    at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\www\Jack\fruit\api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (F:\www\Jack\fruit\api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\www\Jack\fruit\api\node_modules\express\lib\router\layer.js:95:5)
+    at F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:335:12)
+    at next (F:\www\Jack\fruit\api\node_modules\express\lib\router\index.js:275:10)
+------------------------------------------------
+Date: 16-Jun-2021:18:40:58 GMT-0300
+Error: TypeError: Cannot read property 'countAll' of undefined at TypeError: Cannot read property 'countAll' of undefined
+    at DbListAllClients.list (F:\www\Jack\fruit\api\src\data\usecases\db-list-all-clients.ts:23:58)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at ListAllClientsController.handle (F:\www\Jack\fruit\api\src\presentation\controllers\list-all-clients-controller.ts:12:23)
+    at F:\www\Jack\fruit\api\src\main\adapters\adaptRoute.ts:16:26

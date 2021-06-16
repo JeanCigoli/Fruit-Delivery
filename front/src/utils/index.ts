@@ -1,3 +1,4 @@
+import { cpf as validCpf, cnpj as validCnpj } from 'cpf-cnpj-validator';
 import { TOKEN } from '../main/config/constants';
 import { SessionStorage } from './storage/session';
 
@@ -11,6 +12,14 @@ export const formatDate = (timestamp: string) => {
   const date = new Date(timestamp);
 
   return date.toLocaleString('pt-BR');
+};
+
+export const formatDocument = (document: string) => {
+  if (document.length <= 11) {
+    return validCpf.format(document);
+  }
+
+  return validCnpj.format(document);
 };
 
 export const formatCash = (value: number) =>

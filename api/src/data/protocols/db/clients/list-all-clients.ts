@@ -1,5 +1,7 @@
 export interface ListAllClientsRepository {
-  findAll(): ListAllClientsRepository.Result;
+  findAll(
+    params: ListAllClientsRepository.Params,
+  ): ListAllClientsRepository.Result;
 }
 
 export namespace ListAllClientsRepository {
@@ -9,6 +11,11 @@ export namespace ListAllClientsRepository {
     phone: string;
     document: string;
     createdAt: string;
+  };
+
+  export type Params = {
+    offset: number;
+    limit: number;
   };
 
   export type Result = Promise<Client[]>;

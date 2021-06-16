@@ -1,5 +1,6 @@
 import {
   AddClientRepository,
+  CountAllClientsRepository,
   ListAllClientsRepository,
   ListClientByDocumentRepository,
   ListClientByIdRepository,
@@ -13,7 +14,13 @@ export class ClientRepository
     UpdateClientRepository,
     ListClientByDocumentRepository,
     ListClientByIdRepository,
-    ListAllClientsRepository {
+    ListAllClientsRepository,
+    CountAllClientsRepository
+{
+  countAll(): CountAllClientsRepository.Result {
+    return knex('tb_client').count('id_client', { as: 'total' });
+  }
+
   create(params: AddClientRepository.Params): AddClientRepository.Result {
     return knex('tb_client').insert(params);
   }
@@ -30,14 +37,20 @@ export class ClientRepository
       .where('id_client', id);
   }
 
-  findAll(): ListAllClientsRepository.Result {
-    return knex('tb_client').select(
-      'id_client as id',
-      'name',
-      'document',
-      'phone',
-      'created_at as createdAt',
-    );
+  findAll(
+    params: ListAllClientsRepository.Params,
+  ): ListAllClientsRepository.Result {
+    return knex('tb_client')
+      .select(
+        'id_client as id',
+        'name',
+        'document',
+        'phone',
+        'created_at as createdAt',
+      )
+      .offset(params.offset)
+      .limit(params.limit)
+      .orderBy('created_at', 'asc');
   }
 
   findByDocument(document: string): ListClientByDocumentRepository.Result {

@@ -5,9 +5,11 @@ import { Controller, HttpRequest, HttpResponse } from '../protocols';
 export class ListAllClientsController implements Controller {
   constructor(private readonly allClients: ListAllClients) {}
 
-  async handle(_: HttpRequest): Promise<HttpResponse> {
+  async handle(httpRequest: HttpRequest): Promise<HttpResponse> {
     try {
-      const clients = await this.allClients.list();
+      const { page, limit } = httpRequest.query;
+
+      const clients = await this.allClients.list({ page, limit });
 
       return ok('Consulta concluída com sucesso', clients);
     } catch (error) {

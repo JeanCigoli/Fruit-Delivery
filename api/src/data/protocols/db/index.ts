@@ -7,6 +7,7 @@ export * from './address/add-address';
 export * from './clients/add-rel-client-to-address';
 export * from './clients/list-client-by-id';
 export * from './clients/update-client';
+export * from './clients/count-all-clients';
 export * from './address/update-address';
 export * from './clients/list-all-clients';
 export * from './type-product/add-type-product';

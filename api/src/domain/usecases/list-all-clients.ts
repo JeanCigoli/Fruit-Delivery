@@ -1,5 +1,5 @@
 export interface ListAllClients {
-  list(): ListAllClients.Result;
+  list(params: ListAllClients.Params): ListAllClients.Result;
 }
 
 export namespace ListAllClients {
@@ -11,5 +11,15 @@ export namespace ListAllClients {
     createdAt: string;
   };
 
-  export type Result = Promise<Client[]>;
+  export type Params = {
+    page: number;
+    limit: number;
+  };
+
+  export type Result = Promise<{
+    data: Client[];
+    total: number;
+    currentPage: number;
+    limitPage: number;
+  }>;
 }

@@ -4,6 +4,9 @@ import { ListAllClientsController } from '../../../presentation/controllers/list
 
 export function makeListAllClients() {
   const clientRepository = new ClientRepository();
-  const dbListAllClients = new DbListAllClients(clientRepository);
+  const dbListAllClients = new DbListAllClients(
+    clientRepository,
+    clientRepository,
+  );
   return new ListAllClientsController(dbListAllClients);
 }
