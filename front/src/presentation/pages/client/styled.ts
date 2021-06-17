@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   max-width: 100%;
   height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 `;
 
 export const Header = styled.div`

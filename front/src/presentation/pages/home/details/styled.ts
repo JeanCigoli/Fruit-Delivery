@@ -11,15 +11,17 @@ export const Container = styled.div`
 `;
 
 export const Card = styled.div`
-  width: 360px;
+  width: 24vw;
   height: 100%;
   background-color: ${({ theme }) => theme.styles.colors.white.normal};
   border-radius: ${({ theme }) => theme.styles.spacing.base};
-  padding: 12px;
+  padding: 1vh;
 
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  box-shadow: 0.5px 0.5px 10px ${({ theme }) => theme.styles.colors.gray.light};
   gap: 15px;
 `;
 

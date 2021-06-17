@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: ${({ theme }) => theme.styles.colors.gray.light}33;
 
   display: flex;
   align-items: center;
@@ -11,11 +10,12 @@ export const Container = styled.div`
 `;
 
 export const NavContainer = styled.div`
-  width: 20vw;
-  height: 95%;
+  width: 18vw;
+  height: 100%;
+  background-color: ${({ theme }) => theme.styles.colors.pink.light}44;
 `;
 
 export const ChildrenContainer = styled.div`
-  width: 75vw;
-  height: 95%;
+  width: 82vw;
+  height: 100%;
 `;

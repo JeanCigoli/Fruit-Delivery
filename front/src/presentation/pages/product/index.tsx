@@ -16,7 +16,6 @@ import {
 import { useAppDispatch, useAppSelector } from '../../../data/hooks/redux';
 import Head from '../../components/header';
 import { Container, Header, FiltersContainer } from './styled';
-import { DetailAll } from '../../components/cards';
 import Search from '../../components/search';
 import { formatCash, formatDate } from '../../../utils';
 import { listProducts } from '../../../data/usecases/products/list-all-product';
@@ -40,11 +39,9 @@ const Products: React.FC = () => {
   return (
     <Container>
       <Header>
-        <Head title="Estoque de produtos" />
+        <Head title="Estoque de produtos" icon={<FaArchive />} />
 
         <FiltersContainer>
-          <DetailAll icon={<FaArchive />} />
-
           <Search placeholder="Pesquise pelo seu produto" onClick={onSubmit} />
 
           <Button

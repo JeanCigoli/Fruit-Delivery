@@ -15,8 +15,8 @@ import { theme } from './style/chakra';
 
 const App: React.FC = () => (
   <Provider store={store}>
-    <ChakraProvider theme={theme}>
-      <ThemeProvider theme={props}>
+    <ThemeProvider theme={props}>
+      <ChakraProvider theme={theme}>
         <Router history={history}>
           <GlobalStyle />
           <Routes />
@@ -32,8 +32,8 @@ const App: React.FC = () => (
             pauseOnHover
           />
         </Router>
-      </ThemeProvider>
-    </ChakraProvider>
+      </ChakraProvider>
+    </ThemeProvider>
   </Provider>
 );
 

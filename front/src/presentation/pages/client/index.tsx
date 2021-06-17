@@ -16,7 +16,6 @@ import {
 
 import Head from '../../components/header';
 import { Container, Header, FiltersContainer } from './styled';
-import { DetailAll } from '../../components/cards';
 import Search from '../../components/search';
 import { formatDate, formatDocument } from '../../../utils';
 import { useAppDispatch, useAppSelector } from '../../../data/hooks/redux';
@@ -41,12 +40,13 @@ const Client: React.FC = () => {
   return (
     <Container>
       <Header>
-        <Head title="Usuários" />
+        <Head title="Usuários" icon={<FaUsers />} />
 
         <FiltersContainer>
-          <DetailAll icon={<FaUsers />} />
-
-          <Search placeholder="Pesquise pelo seu cliente" onClick={onSubmit} />
+          <Search
+            placeholder="Pesquise pelo nome ou documento"
+            onClick={onSubmit}
+          />
 
           <Button
             leftIcon={<MdAdd />}

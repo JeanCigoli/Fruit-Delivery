@@ -6,5 +6,6 @@ export interface ButtonDTO {
   backgroundColor: 'gray' | 'pink' | 'orange';
   type: 'button' | 'submit' | 'reset' | undefined;
   icon?: React.ReactElement;
+  isLoading?: boolean;
   [propName: string]: any;
 }

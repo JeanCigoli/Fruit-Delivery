@@ -8,6 +8,7 @@ import {
   FaChartLine,
   FaUsers,
 } from 'react-icons/fa';
+import { Avatar, Tooltip } from '@chakra-ui/react';
 
 import NavItem from './item';
 import menuImage from '../../../assets/menu.png';
@@ -24,7 +25,9 @@ const Navbar: React.FC = () => {
 
   return (
     <NavContainer>
-      <Logo />
+      <Logo>
+        <Avatar size="xl" bgColor="white" name="Logo Frutas" src={menuImage} />
+      </Logo>
       <NavList>
         <NavItem
           active
@@ -63,19 +66,17 @@ const Navbar: React.FC = () => {
           label="Estoque"
         />
       </NavList>
-
-      <img src={menuImage} alt="Menu - imagem personalizada de uma venda" />
-
-      <div
-        className="exit"
-        role="button"
-        aria-hidden="true"
-        onClick={exit}
-        onKeyDown={exit}
-      >
-        <FaPowerOff />
-        <h3>Sair</h3>
-      </div>
+      <Tooltip label="Sair" bg="pink.500" placement="right" fontSize="md">
+        <div
+          className="exit"
+          role="button"
+          aria-hidden="true"
+          onClick={exit}
+          onKeyDown={exit}
+        >
+          <FaPowerOff />
+        </div>
+      </Tooltip>
     </NavContainer>
   );
 };

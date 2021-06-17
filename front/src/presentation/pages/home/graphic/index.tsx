@@ -1,7 +1,13 @@
 import React from 'react';
 import Chart from 'react-apexcharts';
 import { ApexOptions } from 'apexcharts';
-
+import {
+  Stat,
+  StatLabel,
+  StatNumber,
+  StatHelpText,
+  StatArrow,
+} from '@chakra-ui/react';
 import { props } from '../../../../main/style/theme';
 
 const Graphic: React.FC = () => {
@@ -51,13 +57,24 @@ const Graphic: React.FC = () => {
   };
 
   return (
-    <Chart
-      type="area"
-      width="800"
-      height="90%"
-      options={options.table}
-      series={options.series}
-    />
+    <>
+      <Stat>
+        <StatLabel>Lucros / Perdas</StatLabel>
+        <StatNumber>R$ 500,00</StatNumber>
+        <StatHelpText>
+          <StatArrow type="increase" />
+          56%
+        </StatHelpText>
+      </Stat>
+
+      <Chart
+        type="area"
+        width="100%"
+        height="80%"
+        options={options.table}
+        series={options.series}
+      />
+    </>
   );
 };
 

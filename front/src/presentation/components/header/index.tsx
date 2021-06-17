@@ -1,17 +1,26 @@
 import React, { useCallback } from 'react';
-import { FaAngleLeft } from 'react-icons/fa';
+import { Button } from '@chakra-ui/react';
 import history from '../../../infra/history';
-import { Container } from './styled';
+import { DetailAll } from '../cards';
+import { Container, DetailsContainer, ArrowBackContainer } from './styled';
 
-const Header: React.FC<{ title: string }> = ({ title }) => {
+const Header: React.FC<{ title: string; icon: any }> = ({ title, icon }) => {
   const goBack = useCallback(() => {
     history.back();
   }, []);
 
   return (
     <Container>
-      <FaAngleLeft onClick={goBack} />
-      <h1>{title}</h1>
+      <DetailsContainer>
+        <DetailAll icon={icon} />
+        <h1>{title}</h1>
+      </DetailsContainer>
+
+      <ArrowBackContainer>
+        <Button colorScheme="pink" variant="link" onClick={goBack}>
+          voltar
+        </Button>
+      </ArrowBackContainer>
     </Container>
   );
 };

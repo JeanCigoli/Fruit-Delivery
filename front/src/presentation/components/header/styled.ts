@@ -6,16 +6,34 @@ export const Container = styled.div`
 
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+`;
 
-  svg {
-    font-size: ${({ theme }) => theme.styles.font.medium};
-    margin-right: 10px;
-    cursor: pointer;
-  }
+export const DetailsContainer = styled.div`
+  width: 50%;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
   h1 {
     font-size: ${({ theme }) => theme.styles.font.medium};
     font-weight: 800;
+    margin-left: 10px;
+  }
+`;
+
+export const ArrowBackContainer = styled.div`
+  width: 50%;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  svg {
+    font-size: ${({ theme }) => theme.styles.font.medium};
+    cursor: pointer;
   }
 `;

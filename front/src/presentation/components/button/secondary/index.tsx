@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import { Spinner } from '@chakra-ui/react';
 import { ButtonDTO } from '../../../../domain/components/button-dto';
 
 import { Container, Button } from './styled';
@@ -9,6 +10,7 @@ const ButtonContainer: React.FC<ButtonDTO> = ({
   type,
   label,
   icon,
+  isLoading,
   ...props
 }) => (
   <Container>
@@ -18,8 +20,14 @@ const ButtonContainer: React.FC<ButtonDTO> = ({
       type={type}
       {...props}
     >
-      {icon}
-      {label}
+      {isLoading ? (
+        <Spinner colorScheme={color} />
+      ) : (
+        <>
+          {icon}
+          {label}
+        </>
+      )}
     </Button>
   </Container>
 );

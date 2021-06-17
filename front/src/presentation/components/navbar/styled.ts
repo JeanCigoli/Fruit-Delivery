@@ -1,11 +1,8 @@
 import styled from 'styled-components';
-import { devicesHeight } from '../../../main/style/device';
 
 export const NavContainer = styled.div`
-  width: 20vw;
+  width: 100%;
   height: 100%;
-  background-color: ${({ theme }) => theme.styles.colors.white.normal};
-  border-radius: ${({ theme }) => theme.styles.spacing.base};
 
   display: flex;
   align-items: center;
@@ -14,58 +11,45 @@ export const NavContainer = styled.div`
 
   padding: 15px 0;
 
-  img {
-    max-width: 60%;
-  }
-
   .exit {
-    color: ${({ theme }) => theme.styles.colors.gray.medium};
-    cursor: pointer;
+    width: 4vw;
+    height: 7vh;
+
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    cursor: pointer;
 
-    :hover {
-      color: ${({ theme }) => theme.styles.colors.pink.bold};
-    }
+    border-radius: ${({ theme }) => theme.styles.spacing.base};
+    background-color: ${({ theme }) => theme.styles.colors.white.opacity};
+    color: ${({ theme }) => theme.styles.colors.gray.bold};
 
     svg {
-      flex-shrink: 0;
       font-size: ${({ theme }) => theme.styles.font.medium};
-      margin-right: 20px;
     }
 
-    h3 {
-      width: 90%;
-      font-size: ${({ theme }) => theme.styles.font.default};
-    }
-  }
-
-  @media ${devicesHeight.laptop} {
-    img {
-      display: none;
+    :hover {
+      color: ${({ theme }) => theme.styles.colors.white.normal};
+      background-color: ${({ theme }) => theme.styles.colors.pink.medium};
     }
   }
 `;
 
 export const Logo = styled.div`
-  width: 90px;
   height: 70px;
-  background-color: ${({ theme }) => theme.styles.colors.orange.bold};
+
+  img {
+    object-fit: contain;
+    background-color: transparent;
+  }
 `;
 
 export const NavList = styled.nav`
   width: 100%;
   height: auto;
 
-  a {
-    color: inherit;
-    text-decoration: none;
-    width: inherit;
-    height: inherit;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;

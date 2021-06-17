@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { IoMdEye, IoMdEyeOff } from 'react-icons/io';
 import { yupResolver } from '@hookform/resolvers/yup';
 
-import { useAppDispatch } from '../../../data/hooks/redux';
+import { useAppDispatch, useAppSelector } from '../../../data/hooks/redux';
 import { LoginType } from '../../../domain/forms/login-form';
 import Input from '../../components/input';
 import * as Button from '../../components/button';
@@ -13,6 +13,9 @@ import { authentication } from '../../../data/usecases/auth/authentication';
 
 const Login: React.FC = () => {
   const dispatch = useAppDispatch();
+  const loginInfo = useAppSelector((state) => state.auth);
+
+  console.log(loginInfo);
 
   const {
     register,
@@ -65,6 +68,8 @@ const Login: React.FC = () => {
           label="Entrar"
           backgroundColor="pink"
           color="white"
+          disabled={loginInfo.isFetch}
+          isLoading={loginInfo.isFetch}
         />
       </Form>
     </Container>
