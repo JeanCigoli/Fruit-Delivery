@@ -18,13 +18,13 @@ const RouterWrapper: React.FC<Routes> = ({
 }) => {
   const session = SessionStorage.getItem(TOKEN);
 
-  if (!session && isPrivate) {
-    return <Redirect to="/" />;
-  }
+  // if (!session && isPrivate) {
+  //   return <Redirect to="/" />;
+  // }
 
-  if (session && !isPrivate) {
-    return <Redirect to="/dashboard" />;
-  }
+  // if (session && !isPrivate) {
+  //   return <Redirect to="/dashboard" />;
+  // }
 
   return (
     <>

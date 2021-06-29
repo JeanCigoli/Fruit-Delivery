@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SalesContainer = styled.div`
-  width: 28%;
+  width: 30%;
   height: 100%;
   background-color: ${({ theme }) => theme.styles.colors.orange.light};
   border-radius: ${({ theme }) => theme.styles.spacing.base};

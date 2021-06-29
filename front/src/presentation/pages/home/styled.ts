@@ -18,7 +18,7 @@ export const Divisor = styled.div`
 `;
 
 export const GraphicContainer = styled.div`
-  width: 70%;
+  width: 65%;
   height: 100%;
   background-color: ${({ theme }) => theme.styles.colors.white.normal};
   border-radius: ${({ theme }) => theme.styles.spacing.base};

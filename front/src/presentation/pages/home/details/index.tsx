@@ -35,7 +35,7 @@ const Details: React.FC = () => {
   return (
     <Container>
       {json.map((value, number) => (
-        <Card key={number}>
+        <Card color={value.color} key={number}>
           <Icon color={value.color}>{value.icon}</Icon>
           <Stat>
             <StatNumber>{formatCash(value.value)}</StatNumber>

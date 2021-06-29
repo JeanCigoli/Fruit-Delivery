@@ -20,15 +20,6 @@ const Banner: React.FC = () => {
       <Heading as="h1" size="lg" fontFamily="Roboto" isTruncated>
         Olá, {auth?.name}
       </Heading>
-      <Heading
-        as="h3"
-        size="md"
-        fontFamily="Roboto"
-        fontWeight="medium"
-        isTruncated
-      >
-        Bem-vindo a tela inicial
-      </Heading>
 
       <p>
         Aqui você pode visualizar por meio de gráficos as informações do seu

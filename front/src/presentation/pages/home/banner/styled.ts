@@ -2,11 +2,10 @@ import styled from 'styled-components';
 
 export const BannerContainer = styled.div`
   width: 100%;
-  height: 25%;
+  height: 15%;
   padding-left: 25px;
-  background-color: ${({ theme }) => theme.styles.colors.pink.light};
   border-radius: ${({ theme }) => theme.styles.spacing.base};
-  color: ${({ theme }) => theme.styles.colors.white.normal};
+  color: ${({ theme }) => theme.styles.colors.black.normal};
 
   position: relative;
 
@@ -25,13 +24,8 @@ export const BannerContainer = styled.div`
     letter-spacing: 0.5px;
   }
 
-  h3 {
-    margin-top: 10px;
-    letter-spacing: 0.5px;
-  }
-
   p {
-    margin-top: 5vh;
+    margin-top: 1vh;
     letter-spacing: 0.5px;
     font-size: ${({ theme }) => theme.styles.font.default};
   }

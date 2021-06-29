@@ -25,6 +25,9 @@ const Graphic: React.FC = () => {
       dataLabels: {
         enabled: false,
       },
+      stroke: {
+        curve: 'smooth',
+      },
       fill: {
         type: 'gradient',
         gradient: {

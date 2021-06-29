@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const NavContainer = styled.div`
-  width: 18vw;
+  width: 100%;
   height: 100%;
   background-color: ${({ theme }) => theme.styles.colors.pink.light}44;
 `;
